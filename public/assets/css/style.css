@@ -1,0 +1,7 @@
+@import "variables.css";
+@import "reset.css";
+
+body {
+  font-size: 18rem;
+  font-family: sans-serif;
+}

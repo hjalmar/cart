@@ -1,0 +1,20 @@
+*, ::before, ::after{
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  box-sizing: border-box;
+  letter-spacing: inherit;
+}
+
+html, body{
+  min-height: 100vh;
+}
+
+html{
+  font-size: calc(var(--scale) * 1px);
+}
+
+a{
+  color: inherit;
+}

@@ -1,0 +1,16 @@
+:root{
+  /* site properties */
+  --scale: .75;
+  --font-size: 24rem;
+
+  /* colorscheme */
+  --bg: #fff;
+  --color: #555f73;
+  --dark-accent: #162b54;
+  --accent: #0066ff;
+
+  /* constraints */
+  --content-max-width: 1192px;
+  --max-width: 1440px;
+  --absolute-max-width: 1700px;
+}
