@@ -42,8 +42,61 @@
         <li><a href="/">youtube</a></li>
       </ul>
     </div>
-    <p>
+    <p class="copy-text">
       Innehållet på denna webbplats är upphovsrättsskyddat och tillhör MODE FASHION. MODE FASHION affärskoncept går ut på att erbjuda mode och kvalitet till bästa pris.
     </p>
   </div>
 </footer>
+
+<style>
+  footer{
+    display: flex;
+    justify-content: center;
+    padding: 40rem 0;
+    background-color: var(--color-salmon);
+  }
+  footer > .max-width{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  footer > .max-width > *{
+    margin: 30rem 0;
+  }
+
+  ul{
+    list-style: none;
+  }
+
+  nav{
+    display: flex;
+  }
+  
+  nav > ul{
+    margin: 0 20rem;
+  }
+
+  nav a{
+    text-decoration: none;
+  }
+
+  .social-media > ul{
+    display: flex;
+  }
+
+  .social-media li{
+    margin: 0 10rem;
+  }
+
+  .branding{
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .copy-text{
+    font-size: 13rem;
+    text-align: center;
+    max-width: 600px;
+  }
+</style>
