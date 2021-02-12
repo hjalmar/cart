@@ -13,7 +13,6 @@
   --color-teal: #47dfe9;
 
   /* constraints */
-  --content-max-width: 1192px;
-  --max-width: 1440px;
-  --absolute-max-width: 1700px;
+  --content-max-width: 1092px;
+  --max-width: 1400px;
 }
