@@ -1,13 +1,15 @@
 :root{
   /* site properties */
-  --scale: .75;
-  --font-size: 24rem;
+  --scale: 1;
+  --font-size: 20rem;
 
   /* colorscheme */
-  --bg: #fff;
-  --color: #555f73;
-  --dark-accent: #162b54;
-  --accent: #0066ff;
+  --background: #fff;
+  --color-salmon: #eddcdc;
+  --color-beige: #edc6ba;
+  --color-light: white;
+  --color-dark: black; 
+  --color-gray: #555f73;
 
   /* constraints */
   --content-max-width: 1192px;
