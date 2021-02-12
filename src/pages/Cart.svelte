@@ -1,12 +1,13 @@
 <script>
   import Product from "~/sections/cart/Product.svelte";
   import Button from '~/components/Button.svelte';
+  import { clear } from '~/components/Modal.svelte';
 </script>
 
 <section class="cart">
   <header>
     <h1>Your shopping cart</h1>
-    <Button variant="teal">Close</Button>
+    <Button variant="teal" on:click={_ => clear()}>Close</Button>
   </header>
   <div class="content-wrapper">
     <div class="products">
