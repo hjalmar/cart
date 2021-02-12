@@ -2,7 +2,7 @@
   export let variant = '';
 </script>
 
-<button on:click class="{variant}">
+<button on:click class="{variant}" {...$$restProps}>
   <slot name="icon" />
   <div class="content">
     <slot>Button placeholder</slot>
