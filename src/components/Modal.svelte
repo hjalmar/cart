@@ -7,7 +7,7 @@
 
 {#if $modal}
   {#key $modal}
-    <div class="modal" role="dialog">
+    <div class="modal">
       <svelte:component this={$modal} />
     </div>
   {/key}
