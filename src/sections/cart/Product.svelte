@@ -32,11 +32,11 @@
   </div>
 
   <div class="quantity">
-    <Quantity value={quantity} min={10} />
+    <Quantity value={quantity} min={1} max={10} />
   </div>
 
   <div class="price">
-    <span class="price-amount">1832</span><span class="price-currency">sek</span>
+    <span class="price-amount">1832</span> <span class="price-currency">sek</span>
   </div>
 
 </div>
@@ -44,7 +44,6 @@
 <style>
   .product{
     display: grid;
-    grid-template-columns: repeat(3, auto);
     width: 100%;
     gap: 10rem;
     align-items: center;
@@ -109,4 +108,7 @@
     gap: 10rem;
   }
 
+  .price-currency{
+    text-transform: uppercase;
+  }
 </style>
