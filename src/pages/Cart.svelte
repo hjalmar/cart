@@ -11,8 +11,12 @@
   </header>
   <div class="content-wrapper">
     <div class="cart-content">
+      <header>
+        <span>Product</span>
+        <span>Quantity</span>
+        <span>Price</span>
+      </header>
       <div class="products">
-        <header></header>
         {#each {length: 4} as product}
           <Product 
             quantity={1}
@@ -90,10 +94,45 @@
     height: calc(100% - 80rem);
   }
 
+  .products{
+    padding: 40rem 0;
+  }
+
+  .cart-content > header{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    position: sticky;
+    top: 0;
+    margin: 0;
+    padding: 30rem 0 10rem;
+    background-color: var(--color-light);
+    border-bottom: 2px solid var(--color-gray);
+  }
+
+  .cart-content > header > span{
+    color: var(--color-dark);
+  }
+
+  .cart-content > header > *{
+    display: flex;
+    justify-content: center;
+  }
+  .cart-content > header > *:first-child{
+    justify-self: flex-start;
+  }
+  .cart-content > header > *:last-child{
+    justify-self: flex-end;
+  }
+
   .cart-content{
-    padding: 40rem;
+    padding: 0 40rem;
     height: 100%;
     overflow-y: scroll;
+  }
+
+  .cart-content :global(.product){
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
   }
 
   .cart-summary{
