@@ -39,8 +39,8 @@
   .amount{
     --size: 25px;
     position: absolute;
-    bottom: -10px;
-    right: -10px;
+    bottom: 3px;
+    right: 3px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,6 +48,6 @@
     height: var(--size);
     border-radius: 50%;
     background-color: var(--color-teal);
+    font-size: 13rem;
   }
-
 </style>
