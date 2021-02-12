@@ -39,4 +39,7 @@
   .teal{
     background-color: var(--color-teal);
   }
+  .danger{
+    background-color: var(--color-red);
+  }
 </style>
