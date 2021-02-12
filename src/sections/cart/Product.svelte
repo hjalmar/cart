@@ -23,8 +23,8 @@
       </p>
 
       <div class="actions">
-        <Button>Change</Button>
-        <Button>Delete</Button>
+        <Button variant="teal">Change</Button>
+        <Button variant="danger">Delete</Button>
       </div>
     </div>
   </div>
