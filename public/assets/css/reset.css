@@ -31,3 +31,7 @@ button{
 .content-max-width{
   max-width: var(--content-max-width);
 }
+
+.danger-text{
+  color: var(--color-red);
+}
