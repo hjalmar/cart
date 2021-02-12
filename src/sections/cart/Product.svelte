@@ -25,8 +25,8 @@
       </p>
 
       <div class="actions">
-        <Button variant="teal">Change</Button>
-        <Button variant="danger">Delete</Button>
+        <Button variant="teal" aria-label="Change">Change</Button>
+        <Button variant="danger" aria-label="Remove">Remove</Button>
       </div>
     </div>
   </div>
