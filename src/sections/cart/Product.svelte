@@ -75,8 +75,8 @@
   }
 
   .image{
-    width: 200px;
-    height: 220px;
+    width: 170px;
+    height: 200px;
     background: var(--color-gray);
   }
 
