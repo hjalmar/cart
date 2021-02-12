@@ -1,17 +1,33 @@
 <script>
-  export const variant = '';
+  export let variant = '';
 </script>
 
 <button on:click class="{variant}">
-  <slot>Button placeholder</slot>
+  <slot name="icon" />
+  <div class="content">
+    <slot>Button placeholder</slot>
+  </div>
 </button>
 
 <style>
   button{
+    display: flex;
+    align-items: center;
     border: none;
     padding: 14rem 40rem;
-    background-color: var(--color-beige);
+    background-color: transparent;
     color: var(--color-dark);
+  }
+  button :global(svg){
+    max-width: 30px;
+    height: auto;
+    width: 100%;
+  }
+  .content:first-child:not(:last-child){
+    margin-right: 15rem;
+  }
+  .content:last-child:not(:first-child){
+    margin-left: 15rem;
   }
   .beige{
     background-color: var(--color-beige);
