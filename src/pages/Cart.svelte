@@ -1,33 +1,54 @@
 <script>
   import Product from "~/sections/cart/Product.svelte";
+  import Button from '~/components/Button.svelte';
 </script>
 
-<section>
+<section class="cart">
   <header>
     <h1>Your shopping cart</h1>
+    <Button variant="teal">Close</Button>
   </header>
-  {#each {length: 2} as product}
-    <div class="grid">
-      <Product 
-        quantity={1}
-        brand="Brand" 
-        product="Oversize Blazer"
-        meta={{
-          color: 'black',
-          size: 36
-        }}
-      />
+  <div class="content-wrapper">
+    <div class="products">
+      <header></header>
+      {#each {length: 2} as product}
+        <Product 
+          quantity={1}
+          brand="Brand" 
+          product="Oversize Blazer"
+          meta={{
+            color: 'black',
+            size: 36
+          }}
+        />
+      {/each}
     </div>
-  {:else}
     <p>Could not find any products.</p>
-  {/each}
+  </div>
 </section>
 
 <style>
   section{
     padding: 30rem;
-    width: 900px;
+    width: 100%;
+    max-width: var(--max-width);
     height: 800px;
-    background: crimson;
+    background: var(--color-salmon);
+  }
+
+  section > header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 30rem 0;
+  }
+
+  section > header > h1{
+    font-size: 45rem;
+  }
+
+  section > .content-wrapper{
+    padding: 40rem;
+    background-color: var(--color-light);
   }
 </style>
