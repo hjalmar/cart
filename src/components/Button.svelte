@@ -1,8 +1,9 @@
 <script>
   export let variant = '';
+  export let slim = false;
 </script>
 
-<button on:click class="{variant}" {...$$restProps}>
+<button on:click class:slim class="{variant}" {...$$restProps}>
   <slot name="icon" />
   <div class="content">
     <slot>Button placeholder</slot>
@@ -28,6 +29,9 @@
   }
   .content:last-child:not(:first-child){
     margin-left: 15rem;
+  }
+  .slim{
+    padding: 5rem;
   }
   .beige{
     background-color: var(--color-beige);
