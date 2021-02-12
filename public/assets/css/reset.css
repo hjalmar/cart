@@ -23,3 +23,11 @@ a{
 button{
   cursor: pointer;
 }
+
+.max-width{
+  max-width: var(--max-width);
+}
+
+.content-max-width{
+  max-width: var(--content-max-width);
+}
