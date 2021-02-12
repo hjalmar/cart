@@ -27,20 +27,22 @@
       </div>
     </div>
     
-    <div class="checkout-information">
-      <div class="discount">
-        <header>
-          <h3>10% discount on your order</h3>
-        </header>
-        <p>As a first time shopper you get discount on your first order.</p>
-      </div>
-  
-      <div class="total">
-  
+    <div class="checkout-information">      
+      <div class="cart-summary">
+        <div class="discount">
+          <header>
+            <h3>10% discount on your order</h3>
+          </header>
+          <p>As a first time shopper you get discount on your first order.</p>
+        </div>
+        <ul>
+          <li><em class="danger-text">Discount -500 SEK</em></li>
+          <li><span>Total 3,458 SEK</span></li>
+        </ul>
       </div>
   
       <div class="actions">
-        <Button slim>
+        <Button on:click={_ => clear()} slim>
           <slot slot="icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polyline points="160 208 80 128 160 48" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg>
           </slot>
@@ -87,17 +89,32 @@
     background-color: var(--color-light);
     height: calc(100% - 80rem);
   }
-  
-  .discount{
-    padding: 40rem;
-    border-top: 2px solid var(--color-gray);
-  }
 
   .cart-content{
     padding: 40rem;
     height: 100%;
     overflow-y: scroll;
   }
+
+  .cart-summary{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20rem 40rem;
+    border-top: 2px solid var(--color-gray);
+  }
+
+  .discount{
+    padding: 20rem;
+    border: 2px solid var(--color-gray);
+    width: 65%;
+  }
+
+  .cart-summary ul{
+    list-style: none;
+    text-align: right;
+  }
+
 
   .actions{
     border-top: 2px solid var(--color-gray);
