@@ -21,7 +21,7 @@
     <div class="branding">
       <Branding />
     </div>
-    <nav>
+    <nav aria-label="Main">
       <ul>
         {#each links as {slug, label}}
           <li class:active={slug === $location}><a href="{slug}">{label}</a></li>
