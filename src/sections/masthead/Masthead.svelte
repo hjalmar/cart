@@ -3,6 +3,9 @@
   import Branding from '~/components/Branding.svelte'; 
   import Navigate from './Navigation.svelte';
   import CartButton from './CartButton.svelte';
+  import { push } from '~/components/Modal.svelte';
+  
+  import Cart from '~/pages/Cart.svelte';
 </script>
 
 <header id="masthead">
@@ -12,10 +15,9 @@
       <Branding />
     </div>
     <Navigate />
-    <CartButton />
+    <CartButton on:click={_ => push(Cart)} />
   </div>
 </header>
-
 
 <style>
   #masthead{
