@@ -10,6 +10,7 @@
   --color-light: white;
   --color-dark: black; 
   --color-gray: #555f73;
+  --color-teal: #47dfe9;
 
   /* constraints */
   --content-max-width: 1192px;
