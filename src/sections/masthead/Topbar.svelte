@@ -9,20 +9,28 @@
 </script>
 
 <section id="top-bar">
-  <Search placeholder="Sök" />
-  <ul>
-    {#each links as {slug, label}}
-      <li class:active={slug === $location}><a href="{slug}">{label}</a></li>
-    {/each}
-  </ul>
+  <div class="max-width">
+    <Search placeholder="Sök" />
+    <ul>
+      {#each links as {slug, label}}
+        <li class:active={slug === $location}><a href="{slug}">{label}</a></li>
+      {/each}
+    </ul>
+  </div>
 </section>
 
 
 <style>
-  section{
+  .max-width{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+  }
+  section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 4rem 0;
     background-color: var(--color-salmon);
   }
