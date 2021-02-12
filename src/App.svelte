@@ -1,12 +1,17 @@
 <script>
   import Router, { context } from 'svelte-standalone-router';
+  
+  // components 
   import Cart from './pages/Cart.svelte';
+  import Masthead from './sections/masthead/Masthead.svelte';
 
   // routing for ease of expanding if time left
   const app = context({ initial: location.pathname });
   app.get('/', (req, res) => res.send(Cart));
 </script>
 
+
+<Masthead />
 
 <main>
   <Router />
