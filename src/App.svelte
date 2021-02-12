@@ -10,7 +10,7 @@
 
   // routing for ease of expanding if time left
   const app = context({ initial: location.pathname });
-  app.get('/', (req, res) => res.send(Cart));
+  app.get('/', (req, res) => res.send(Index));
 </script>
 
 <Masthead />
