@@ -1,11 +1,11 @@
 <script>
   import { location } from 'svelte-standalone-router';
   const links = [
-    {slug: '/', label: 'ACCESSOARER'},
-    {slug: '/', label: 'VÄSKOR'},
-    {slug: '/', label: 'SKOR'},
-    {slug: '/', label: 'VARUMÄRKEN'},
-    {slug: '/', label: 'OUTLET'}        
+    {slug: '/', label: 'accessoarer'},
+    {slug: '/', label: 'väskor'},
+    {slug: '/', label: 'skor'},
+    {slug: '/', label: 'varumärken'},
+    {slug: '/', label: 'outlet'}        
   ];
 </script>
 
@@ -16,3 +16,20 @@
     {/each}
   </ul>
 </nav>
+
+<style>
+  nav > ul{
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bold;  
+  }
+
+  nav > ul > li{
+    margin: 0 10rem;
+  }
+
+  nav > ul > li a{
+    text-decoration: none;
+  }
+</style>
