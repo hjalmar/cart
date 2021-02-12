@@ -7,7 +7,7 @@
 <section class="cart">
   <header>
     <h1>Your shopping cart</h1>
-    <Button variant="teal" on:click={_ => clear()}>Close</Button>
+    <Button variant="teal" on:click={_ => clear()} aria-label="Close">Close</Button>
   </header>
   <div class="content-wrapper">
     <div class="products">
